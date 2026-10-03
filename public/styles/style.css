@@ -1,0 +1,78 @@
+:root {
+  --primary-color: #d32f2f;
+  --secondary-color: #ffc107;
+  --text-dark: #333333;
+  --text-light: #ffffff;
+  --bg-light: #f8f9fa;
+  --bg-dark: #212529;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+}
+
+.navbar {
+  background-color: var(--primary-color) !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand, .nav-link {
+  color: var(--text-light) !important;
+}
+
+.nav-link:hover {
+  color: var(--secondary-color) !important;
+}
+
+.hero-section {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  padding: 100px 0;
+  text-align: center;
+  /* Espaço para imagem de fundo se necessário */
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+.btn-primary-custom {
+  background-color: var(--secondary-color);
+  color: var(--text-dark);
+  border: none;
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+  background-color: #e0a800;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-custom {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.card-custom:hover {
+  transform: translateY(-5px);
+}
+
+/* Utilitários globais */
+.mt-100 { margin-top: 100px; }
+.mb-100 { margin-bottom: 100px; }
